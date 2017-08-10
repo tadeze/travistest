@@ -1,4 +1,9 @@
 language: node_js
 node_js:
-    -0.12
-
+    - 6
+env:
+  - My_VAR=TestingVar
+  - NODE_ENV=TEST 
+before_install:
+  - npm install 
+  
